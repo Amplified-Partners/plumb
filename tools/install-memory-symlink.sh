@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# install-memory-symlink.sh — make Mirror's memory/ a symlink to this git clone.
+# install-memory-symlink.sh — make Plumb's memory/ a symlink to this git clone.
 #
 # Idempotent. Run once per Mac. Migrates ~/.claude/projects/<sanitised-cwd>/memory/
 # into the clone, then replaces the local dir with a symlink.
@@ -100,7 +100,9 @@ if [ -n "$(git -C "$CLONE_PATH" status --porcelain memory/)" ]; then
 memory/ has uncommitted changes after migration. commit + push:
   cd "$CLONE_PATH"
   git add memory/
-  git -c user.name='Mirror (Claude on Mac, Anthropic)' commit -m 'memory: migrate from local Mac'
+  # set user.name to your Mac-specific surface per Plumb's identity rule v2.
+  # e.g. 'Plumb (Claude on Mac M4 Desktop, Anthropic)' / 'Mac M3 Pro Laptop' / etc.
+  git -c user.name="Plumb (Claude on $(hostname -s 2>/dev/null || echo Mac), Anthropic)" commit -m 'memory: migrate from local Mac'
   git push
 EOF
 fi

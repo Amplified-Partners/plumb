@@ -1,6 +1,6 @@
 # memory/
 
-Mirror's curated memory, surfaced from `~/.claude/projects/<sanitised-cwd>/memory/` on each Mac via a symlink to this directory.
+Plumb's curated memory, surfaced from `~/.claude/projects/<sanitised-cwd>/memory/` on each Mac via a symlink to this directory.
 
 Files Claude Code writes here: `MEMORY.md`, `feedback-*.md`, `project-*.md`.
 
@@ -12,7 +12,7 @@ Files Claude Code writes here: `MEMORY.md`, `feedback-*.md`, `project-*.md`.
 ## Pull/push policy
 
 - **Session start:** `git -C <clone> pull --ff-only` before Claude Code launches.
-- **Session end:** commit + push as part of Mirror's baton write.
+- **Session end:** commit + push as part of Plumb's baton write.
 
 Single canonical clone path per Mac (default): `~/Manual Library/Projects/mirror`.
 Single canonical Claude Code cwd across Macs: `~/Downloads/all-three-macs`.
