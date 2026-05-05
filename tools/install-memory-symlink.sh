@@ -102,7 +102,7 @@ memory/ has uncommitted changes after migration. commit + push:
   git add memory/
   # set user.name to your Mac-specific surface per Plumb's identity rule v2.
   # e.g. 'Plumb (Claude on Mac M4 Desktop, Anthropic)' / 'Mac M3 Pro Laptop' / etc.
-  git -c user.name="Plumb (Claude on $(hostname -s 2>/dev/null || echo Mac), Anthropic)" commit -m 'memory: migrate from local Mac'
+  git -c user.name="Plumb (Claude on $(hostname -s 2>/dev/null || echo UNKNOWN-MAC), Anthropic)" commit -m 'memory: migrate from local Mac'
   git push
 EOF
 fi
