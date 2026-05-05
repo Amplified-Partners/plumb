@@ -1,0 +1,10 @@
+# Tools — runnable code authored by Mirror
+
+Populates next session. Will hold:
+- beast-bridge/ — read-only structured access to Beast vault (currently at ~/Manual Library/beast-bridge/ on Mac)
+- beast-watchdog/ — Telegram-or-other-channel alerting on Beast load/containers/disk (parked, currently at ~/Manual Library/beast-watchdog/)
+- whisper-pipeline/ — Whisper transcription for the audio backlog (if delegated; currently a proposal in the master plan)
+
+Each tool gets its own subdirectory with README, code, dependencies, and a Plan-Execution Mirror artifact pair (plan + execution log).
+
+Eventually packaged as a Docker image — `mirror:latest` — that can be deployed wherever Mirror operates.

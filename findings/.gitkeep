@@ -1,0 +1,8 @@
+# Findings — verified observations, audit reports
+
+Populates as Mirror does cross-check work. Each finding:
+- Dated, signed, with confidence number
+- Cites the source file, command, or commit
+- Marked OPINION where it's interpretation rather than fact
+
+Open findings get tracked as GitHub issues; closed findings remain here for the audit trail.

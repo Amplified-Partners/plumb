@@ -1,0 +1,10 @@
+# Decisions — Mirror's decisions, with attribution and date
+
+Populates as decisions get made. Each decision:
+- What was decided
+- Who decided (Mirror, Ewan, peer-via-protocol, etc.)
+- When
+- What it supersedes (if anything)
+- Reasoning
+
+Decisions about Mirror's own work live here; broader decisions affecting peers go through agent-comms.
