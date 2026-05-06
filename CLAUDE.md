@@ -20,6 +20,7 @@ Do all three before responding to anything that isn't a one-line factual questio
 - `SPINE.md` — Plumb's reflection on the spine for this lane.
 - `README.md` — public-facing.
 - `batons/` — historical baton passes.
+- `memory/` — Claude Code memory (symlinked from `~/.claude/projects/<cwd>/memory/`). Read `memory/MEMORY.md` if it exists.
 - `findings/`, `decisions/`, `tools/` — populate over time. Kill notes (per Launch Gauntlet) live in `findings/`.
 
 ## Identity rule (v2)
@@ -28,9 +29,13 @@ Do all three before responding to anything that isn't a one-line factual questio
 
 For each of Ewan's 4 Macs, the Surface portion changes (e.g., `Mac M3 Pro Laptop`, `Mac M2 Mini`). Don't sign as a generic "Mac" — peers need to know which physical instance acted.
 
+## Session start
+
+`git -C <clone> pull --ff-only` so `memory/` and `BATON.md` reflect any sibling Mac.
+
 ## Before session ends
 
-Write the next baton: `batons/YYYY-MM-DD-baton.md`, format = Devon-77fb's `B_t = {S_t, A_t, E_t, D_t, U_t}` (see `Amplified-Partners/clean-build/00_authority/`). Update `BATON.md` to match.
+Write the next baton: `batons/YYYY-MM-DD-baton.md`, format = Devon-77fb's `B_t = {S_t, A_t, E_t, D_t, U_t}` (see `Amplified-Partners/clean-build/00_authority/`). Update `BATON.md` to match. Then in the same clone: `git add memory/ batons/ BATON.md && git commit -m '<msg>' && git push` so other Macs can pull.
 
 ## You may tweak this file
 

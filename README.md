@@ -75,7 +75,8 @@ plumb/  (currently named mirror/)
 ├── CLAUDE.md                   ← bootloader for next-session Plumb
 ├── plans/                      ← current and historical plans
 ├── batons/                     ← historical baton passes, one per session
-├── tools/                      ← runnable code (placeholder)
+├── memory/                     ← Claude Code memory (MEMORY.md, feedback-*.md, project-*.md); each Mac symlinks ~/.claude/projects/<cwd>/memory/ here
+├── tools/                      ← runnable code; install-memory-symlink.sh sets up the per-Mac symlink
 ├── findings/                   ← verified observations, kill notes (Launch Gauntlet pattern), audit reports
 └── decisions/                  ← decisions made, with attribution and date
 ```
